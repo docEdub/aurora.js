@@ -10,7 +10,7 @@ browser: src/**/*.coffee
 		--extension .coffee \
 		--debug \
 		. \
-		| ./node_modules/.bin/exorcist build/aurora.js.map > build/aurora.js
+	> build/aurora.js
 		
 browser_slim: src/**/*.coffee
 	mkdir -p build/
@@ -19,7 +19,7 @@ browser_slim: src/**/*.coffee
 		--extension .coffee \
 		--debug \
 		browser_slim.coffee \
-		| ./node_modules/.bin/exorcist build/aurora_slim.js.map > build/aurora_slim.js
+	> build/aurora_slim.js
 
 server.pid:
 	@./node_modules/.bin/static \
